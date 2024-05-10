@@ -12,6 +12,10 @@
 <div id="app">
     <h1 :class="colore">{{ message }}</h1>
     <button @click="cambiaColore">Cambia il colore</button>
+    <br>
+    <button @click="printImg">Stampa o rimuovi l'immagine</button>
+    <br>
+    <img v-bind:src="immagine" alt="">
 </div>
 
     <script src="./js/main.js"></script>
