@@ -11,6 +11,8 @@
 
 <div id="app">
     <h1 :class="colore">{{ message }}</h1>
+    <span>Inserisci il tuo titolo </span>
+    <input class="fs" type="text" v-model="message" placeholder="Modifica il testo">
     <button @click="cambiaColore">Cambia il colore</button>
     <br>
     <button @click="printImg">Stampa o rimuovi l'immagine</button>
